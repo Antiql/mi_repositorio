@@ -29,8 +29,6 @@ body{
 .main_section2{
     float: right;
 }
-
-
 header{ 
     top: 0;    
     width: auto;
@@ -53,12 +51,12 @@ padding-left: 2rem;
     margin-left: 2rem;
 }
 
-.header_ul{
+.header_nav_ul{
 list-style-type: none;
 padding: 1.5rem;
 }
 
-.nav_li{
+.header_nav_li{
     display: inline-block;
     margin-inline: 1rem;
     padding: 1.5rem;
@@ -82,35 +80,40 @@ a {
 
 p{
     font-size: 2rem;
+    margin: 1rem
 }
+
 article p{
     font-size: 1.5rem;
     margin: 1rem;
 }
-p{
-    margin: 1rem
-}
+
 h1 {
     font-size: 4rem;
     color: rgb(0, 0, 0);
     margin: 1rem;
 }
+
 h2{
     font-size: 3rem;
     margin: 1rem;
 }
+
 section p{
     text-align: center;
 }
+
 section li{
     margin: 2rem;
     text-decoration: dotted;
     font-size: 20px;
 }
+
 footer li{
     display: inline;
     list-style-type: none;
 }
+
  footer{
     bottom: 0;
  }
