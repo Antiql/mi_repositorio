@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+body{
+    font-size: medium;
+    font-family: 'Righteous', cursive;
+    background: papayawhip;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main__img{
+    margin: 2rem;
+}
+
+.main_section1{
+    float: left;
+}
+.main_section2{
+    float: right;
+}
+
+
+header{ 
+    top: 0;    
+    width: auto;
+    height: auto;
+    background-color: #633f3f;
+    margin-bottom: 2rem;
+   
+}
+
+.header__img{
+float: left;
+margin-top: 1rem;
+padding-right: 2rem;
+padding-left: 2rem;
+}
+
+.main__img{
+    float: right;
+    margin-right: 2rem;  
+    margin-left: 2rem;
+}
+
+.header_ul{
+list-style-type: none;
+padding: 1.5rem;
+}
+
+.nav_li{
+    display: inline-block;
+    margin-inline: 1rem;
+    padding: 1.5rem;
+   
+}
+    
+li a {
+text-decoration: none;
+text-transform: uppercase;
+list-style-type: none;
+}
+
+li a:hover{
+    color: whitesmoke;
+}
+
+a {
+    color: rgb(31, 9, 9);
+    font-size: 2rem;
+}
+
+p{
+    font-size: 2rem;
+}
+article p{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+p{
+    margin: 1rem
+}
+h1 {
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    margin: 1rem;
+}
+h2{
+    font-size: 3rem;
+    margin: 1rem;
+}
+section p{
+    text-align: center;
+}
+section li{
+    margin: 2rem;
+    text-decoration: dotted;
+    font-size: 20px;
+}
+footer li{
+    display: inline;
+    list-style-type: none;
+}
+ footer{
+    bottom: 0;
+ }
