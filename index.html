@@ -7,61 +7,77 @@
     <title>Dread Knitters</title>
     <link rel="icon" href="img/LogoIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
 <header>
-    <a href="index.html">
-    <img class="header__img"src="img/DREAD KNITTER1S.png" alt="Dread knitters icono">
-    </a>
     <nav>
-        <ul class="header_nav_ul">
-            <li class="header_nav_li">
-                <a href="our_story.html">our story</a>
-            </li>
-            <li class="header_nav_li">
-                <a href="services.html">services</a>
-            </li>
-            <li class="header_nav_li">
-                <a href="gallery.html">gallery</a>
-            </li>
-            <li class="header_nav_li">
-                <a href="contact.html">contact</a>
-            </li>
-        </ul>
+        <a href="index.html"><img class="header__img"src="img/DREAD KNITTER1S.png" alt="Dread knitters icono"></a>
+        <div class="header_nav_ul" id="nav_ul">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li class="header_nav_li">
+                    <a href="our_story.html">our story</a>
+                </li>
+                <li class="header_nav_li">
+                    <a href="services.html">services</a>
+                </li>
+                <li class="header_nav_li">
+                    <a href="gallery.html">gallery</a>
+                </li>
+                <li class="header_nav_li">
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
 </header>
 
-<main class="main_description">
-    <h1>Dread Knitters</h1>
-    <p>Making your nightmares come true!</p>
-    <figure>
-        <img class="main__img" src="img/Drawing2.jpg" alt="main drawing" width="800" height="827">
-    </figure>
-     <article>
-    <p>A service for the terror lovers and project makers.Where we suggest to keep and eye behind you, since every living nightmare is right around the corner...</p>
-     </article>
+<main class="main_content">
+    <div class="main_description">
+        <h1>Dread Knitters</h1>
+        <h2>Making your nightmares come true!</h2>
+        <p>A special service for the terror lovers and project makers.<br> Where we suggest to keep and eye behind you, since every living nightmare is right around the corner...</p>
+    </div>
+     <div>
+        <figure>
+            <img class="main__img" src="img/Drawing2.jpg" alt="main drawing" width="800" height="827">
+        </figure>
+     </div>
 </main>
+
 
 <hr>
 
 <footer>
-    <h2>Our Socialmedia</h2>
-    <ul>
-         <li>
-             <a href="https://www.instagram.com/_antoo0.l/?hl=es-la">
-             <img src="img/Instagram.png" alt="Instagram logo">
-             </a>
-         </li>
-    
-         <li>
-             <a href="https://www.youtube.com/channel/UCv2QFYF4fa-W3x5My0rZqZQ">
-             <img src="img/youtube.jpeg" alt="youtube logo">
-             </a>
-         </li>
-    </ul>
+    <h3 class="footer_h3">Our Socialmedia</h3>
+    <div>
+        <ul>
+            <li class="footer_item">
+                <a href="https://www.instagram.com/_antoo0.l/?hl=es-la">
+                <img src="img/Instagram.png" alt="Instagram logo">
+                </a>
+            </li>
+       
+            <li class="footer_item2">
+                <a href="https://www.youtube.com/channel/UCv2QFYF4fa-W3x5My0rZqZQ">
+                <img src="img/youtube.jpeg" alt="youtube logo">
+                </a>
+            </li>
+       </ul>
+    </div>
 </footer>
-<script src="js/bootstrap.js"></script>
+<script>
+    var nav_ul=document.getElementById("nav_ul")
+    function showMenu(){
+        nav_ul.style.right="0";
+    }
+    function hideMenu(){
+        nav_ul.style.right="-200px";
+    }
+</script>
 </body>
 </html>
