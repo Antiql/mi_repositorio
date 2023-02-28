@@ -7,6 +7,7 @@
     <title>Dread Knitters</title>
     <link rel="icon" href="img/LogoIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -47,20 +48,31 @@
 <hr>
 
 <footer>
-    <h2>Our Socialmedia</h2>
-    <ul>
-        <li>
-             <a href="https://www.instagram.com/_antoo0.l/?hl=es-la">
-             <img src="img/Instagram.png" alt="Instagram logo">
-             </a>
-         </li>
-    
-         <li>
-             <a href="https://www.youtube.com/channel/UCv2QFYF4fa-W3x5My0rZqZQ">
-             <img src="img/youtube.jpeg" alt="youtube logo">
-             </a>
-         </li>
-    </ul>
+    <h3 class="footer_h3">Our Socialmedia</h3>
+    <div>
+        <ul>
+            <li class="footer_item">
+                <a href="https://www.instagram.com/_antoo0.l/?hl=es-la">
+                <img src="img/Instagram.png" alt="Instagram logo">
+                </a>
+            </li>
+       
+            <li class="footer_item">
+                <a href="https://www.youtube.com/channel/UCv2QFYF4fa-W3x5My0rZqZQ">
+                <img src="img/youtube.jpeg" alt="youtube logo">
+                </a>
+            </li>
+       </ul>
+    </div>
 </footer>
+<script>
+    var nav_ul=document.getElementById("nav_ul")
+    function showMenu(){
+        nav_ul.style.right="0";
+    }
+    function hideMenu(){
+        nav_ul.style.right="-200px";
+    }
+</script>
 </body>
 </html>
