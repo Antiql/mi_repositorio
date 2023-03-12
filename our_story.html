@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dread Knitters</title>
     <link rel="icon" href="img/LogoIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sass/main_sass.scss">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -14,7 +15,8 @@
     <header>
         <nav>
             <a href="index.html"><img class="header__img"src="img/DREAD KNITTER1S.png" alt="Dread knitters icono"></a>
-            <div class="header_nav_ul">
+            <div class="header_nav_ul" id="nav_ul">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li class="header_nav_li">
                         <a href="our_story.html">our story</a>
@@ -30,22 +32,33 @@
                     </li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </header>
-<hr>
+
 
 <main>
-    <section>
-        <h1>Our story</h1>
-        <p>"when creating this page, with everybody having recurring nightmares in their sleep, i thought creating some way of illustrating these horryfing experiences and sharing with other creep-lovers was a mission to accomplish!</p>
-        <p>-Author</p>
+    <section class="story">
+        
+        <div class="story_quote">
+             <q>If dreams can come true, <br> what does that say about <strong>nightmares?</strong></q>
+             <p class="name_quote"><em>- Will Wood and the tapeworms</em></p>
+        </div>
+        <div class="story_section">
+             <img class="story_image" src="img/Drawing 1.jpg" alt="main drawing">
+             <div class="story_paragraph">
+             <h1>-Our story-</h1>
+             <p>What inspired us to make this organisation was the recent increase in popularity "nightmare fuel" media gained. <br> Lately, horror movies, disturbing stories, crime cases are easily distributed across the internet (and quickly consumed). <br>On top of that, you can appreciate this idea of creating your own creepy project (movie, drawing, book) among horror lovers very often. <br> Anyone can be an artist as long as they put their mind and concentration profusely into that project, so why not help make their dreamt nightmares true?</p>
+             
+             </div>
+        </div>
     </section>
-   <article>
-    <p>Our purpose is to serve as a space of horror sharing, where anyone can show their deepest fears, tell their craziest and horrific stories, with the support of a group of artists that "horrify" your inputs</p>
+
+   <article class="purpose_section">
+    <h2>Our purpose</h2>
+    <p>We want to serve as a space of horror sharing, where anyone can show their deepest fears to others, tell their craziest and horrific stories, within the presence of a group of artists that "horrify" your inputs</p>
    </article>
 </main>
-
-<hr>
 
 <footer>
     <h3 class="footer_h3">Our Socialmedia</h3>

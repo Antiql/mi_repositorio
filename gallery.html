@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dread Knitters</title>
     <link rel="icon" href="img/LogoIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sass/main_sass.scss">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -14,7 +15,8 @@
     <header>
         <nav>
             <a href="index.html"><img class="header__img"src="img/DREAD KNITTER1S.png" alt="Dread knitters icono"></a>
-            <div class="header_nav_ul">
+            <div class="header_nav_ul" id="nav_ul">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li class="header_nav_li">
                         <a href="our_story.html">our story</a>
@@ -30,6 +32,7 @@
                     </li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </header>
 

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Overpass:wght@100&family=Righteous&display=swap');
+/* Variables */
+
+@import "_base.scss";
+@import "_layout.scss";
+@import "_components.scss";
+
+body{
+    font-size: 1.5rem;
+    background: rgb(226, 226, 226);
+    min-height: 100vh;
+}
+
+/* contenido principal */
+
+.main_content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-image:url(img/backgroundbanner.jpeg);
+    background-position: center;
+    background-size: cover;
+    width:auto;
+    height:1000px;
+    position:relative;
+}
+
+.main_description {
+    justify-content: center;
+    margin-top: 250px;
+    top: 0;
+    width: 100%;
+
+    h1 {
+        font-size: $spooky-font;
+        font-weight: 650;
+        color: $spooky-color;  
+        font-family: $spooky-style; 
+    }
+
+    h2 {
+        font-size:  $bold-font;
+        color: $bold-white;
+        font-family: $bold-style;
+    }
+
+    p {
+        font-size: $white-font;
+        color: $white-color;
+        font-family: $white-style;
+    }
+}
+
+@media (max-width: 768px){
+    .main_content{
+        flex-direction: column;
+    }
+    .main_description{
+        padding: 2vh;
+    }
+}
+
+/* our story */
+
+.story {
+    
+    .story_quote {
+
+        padding: 40px;
+        background-image: url(img/creepy62b39e8d338a09950ad62ea83fbd4a.jpg);
+        background-position: center;
+    
+        q {
+            font-size: 30px;
+            font-family: $bold-style;
+            color: $white-color;
+            display: block;
+            text-align: center;
+        }
+
+        .name_quote{
+            font-family: $bold-style;
+            font-weight: 300;
+            text-align: center;
+            color:$white-color ;
+            font-size: 25px;
+        }    
+    }
+
+    .story_section{
+        
+        display: flex;
+
+        .story_image{
+            order: 2; 
+            margin: 5%; 
+        }
+
+        .story_paragraph{
+            order: 1;
+            text-align: center;
+            margin-left: 5%;
+
+            h1{
+                font-family: $spooky-style;
+                margin: 19% 0 8%;
+                color:$spooky-alt-color;
+                font-size: $spooky-font;
+            }
+    
+            p {
+                font-size: $bold-font;
+                font-family: $white-style;
+                margin-bottom: 19%;
+            }
+        }
+    }
+}
+
+.purpose_section {
+    margin: 2rem;
+    background-color: $spooky-color;
+    text-align: center;
+    padding: 2rem;
+
+    h2 {
+        margin: 1rem 0 2rem;
+        font-size: $spooky-style;
+        color: black;
+        font-size: $spooky-font;
+        font-family: $spooky-style;
+    }
+
+    p {
+        font-family: $bold-style;
+       font-size: $bold-font;
+       
+    }
+}
+
+@media (max-width: 768px){
+
+    .story_quote {
+        q {
+            font-size: $white-font;
+        }
+    }
+
+    .story_section{
+        flex-wrap: wrap;
+
+        .story_image{
+            margin: 1rem;
+        }
+
+        .story_paragraph{
+            margin: 0 2rem;
+        }
+    }
+
+}
+
+/* our services */
+
+.proposal {
+    bacl
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: $white-color;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: $bold-font;
+    background: transparent;
+
+    &:hover{
+        border: 1px solid $spooky-alt-color;
+        background: $spooky-alt-color;
+        transition: 1s;
+    }
+}
+
+
+
+/* gallery */
+
+
+.main_section1{
+    float: left;
+}
+
+.main_section2{
+    float: right;
+}
+    
+li a {
+text-decoration: none;
+text-transform: uppercase;
+list-style-type: none;
+}
+
+li a:hover{
+    color: rgb(240, 240, 240);
+}
+
+p{
+    font-size: 2rem;
+
+}
+
+article p{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+}
+
+
+section li{
+    margin: 2rem;
+    text-decoration: dotted;
+    font-size: 20px;
+}
+
+footer li{
+    display: inline;
+    list-style-type: none;
+}
+
