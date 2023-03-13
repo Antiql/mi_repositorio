@@ -40,6 +40,8 @@ nav{
         font-size: 2rem;
         text-decoration: none;
         font-family: 'Righteous'; 
+        text-transform: uppercase;
+        list-style-type: none;
     }
 
     &::after{
@@ -54,6 +56,10 @@ nav{
 
     &:hover::after{
         width: 100%;
+    }
+
+    li a:hover{
+        color: rgb(240, 240, 240);
     }
 }
 
@@ -115,4 +121,9 @@ footer{
     
     .footer_item{
         padding-bottom: 5%;
+    }
+
+    footer li{
+        display: inline;
+        list-style-type: none;
     }

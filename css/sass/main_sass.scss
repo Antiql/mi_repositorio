@@ -11,6 +11,10 @@ body{
     min-height: 100vh;
 }
 
+li a:hover{
+    color: rgb(240, 240, 240);
+}
+
 /* contenido principal */
 
 .main_content{
@@ -65,7 +69,9 @@ body{
 .story {
     
     .story_quote {
-
+        margin: 2rem;
+        border: 1px solid;
+        border-radius: 20px;
         padding: 40px;
         background-image: url(img/creepy62b39e8d338a09950ad62ea83fbd4a.jpg);
         background-position: center;
@@ -122,6 +128,11 @@ body{
     background-color: $spooky-color;
     text-align: center;
     padding: 2rem;
+    transition: 0.5s;
+
+    &:hover{
+        box-shadow:0 0 20px 0 rgba(60, 13, 99, 0.575);
+    }
 
     h2 {
         margin: 1rem 0 2rem;
@@ -162,72 +173,219 @@ body{
 
 /* our services */
 
-.proposal {
-    bacl
-}
-.hero-btn {
-    display: inline-block;
-    text-decoration: none;
-    color: $white-color;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: $bold-font;
-    background: transparent;
+.Artists_header{
+    text-align: center;
 
-    &:hover{
-        border: 1px solid $spooky-alt-color;
-        background: $spooky-alt-color;
-        transition: 1s;
+    h1{
+        margin: 5% 0 0;
+        font-family: $spooky-style;
+        font-size: $spooky-font;
+        color: $spooky-alt-color;
+    }
+    
+    p{
+        font-size: $white-font;
+        font-family: $white-style;
     }
 }
 
+.artists {
+    margin-top: 2rem;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
 
+    .artist_card {
+        
+        background-color: #292121;
+        border-radius: 45px;
+        flex-basis: 31%;
+        padding: 50px;
+        transition: 0.5s;
+        margin: auto;
+
+        &:hover{
+            box-shadow:0 0 20px 0 rgba(8, 2, 14, 0.575);
+        }
+
+        .artist_info {
+
+            text-align: center;
+
+            h2{
+                font-family: $spooky-style;
+                font-size: $bold-font;
+                color: $spooky-color;
+                padding: 25px;
+            }
+            
+            p{
+                font-family: $white-style;
+                font-size: $white-font;
+                color: $bold-white;
+            }
+        }
+    }
+}
+
+.services_list {
+    margin: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 2rem;
+
+    h2{
+        font-family: $spooky-style;
+        color: #292121;
+        font-size: 50px;
+    }
+
+    li{
+        font-size: $white-font;
+        list-style: none;
+        font-family: $bold-style;
+        padding: 20px;
+    }
+}
+
+.proposal {
+    margin: 4rem;
+    border-radius: 45px;
+    background-image:  url(img/forestback0.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: $bold-style;
+    font-size: $bold-font;
+    font-weight: 100;
+    color: black;
+    padding: 20px;
+    text-align: center;
+
+    .hero-btn {
+        margin-top: 10px;
+        display: inline-block;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.801);
+        border: 1px solid #ffffff;
+        padding: 12px 34px;
+        font-size: $bold-font;
+        background: transparent;
+    
+        &:hover{
+            border: 1px solid rgb(177, 0, 0);
+            background: rgb(177, 0, 0);
+            transition: 1s;
+        }
+    }
+}
+
+@media (max-width: 768px){
+
+    .Artists_header{
+        h1{
+            font-size: 50px;
+            margin: 10px;
+        }
+    }
+    .artists{
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .artist_card{
+            margin: 5px;
+        }
+    }
+}
 
 /* gallery */
 
+.Gallery-intro{
 
-.main_section1{
-    float: left;
+    text-align: center;
+
+    h2{
+        font-family: $spooky-style;
+        font-size: $spooky-font;
+        margin: 2rem;
+        color: $spooky-alt-color;
+    }
+
+    p{
+        font-style: $white-font;
+        font-size: $white-font;
+    }
+
+
 }
 
-.main_section2{
-    float: right;
+.section_gallery{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+   
+    img {
+        margin: 2rem;
+        flex-basis: 45%;
+    }
 }
+
+/* contact */
+
+.contact_info{
+    margin: 2%;
+
+    display: flex;
+
+    img {
+        order: 1;
+        margin: 2rem;
+    }
+
+    .contact-col{
+
+        margin: 2rem;
+        order: 2;
+
+        h1{
+            font-family: $spooky-style;
+            font-size:$spooky-font ;
+            color: $spooky-alt-color;
+        }
+
+        p{
+            font-family: $white-style;
+            font-size: $white-font;
+            margin-bottom: 20px;
+        }
     
-li a {
-text-decoration: none;
-text-transform: uppercase;
-list-style-type: none;
-}
+        input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 17px;
+            outline: none;
+            border: 1px solid $spooky-alt-color;
+            background-color: #8585859f;
+            font-family: $white-style;
+            color: #292121;
+        }
+    
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 17px;
+            outline: none;
+            border: 1px solid $spooky-alt-color;
+            background-color: #8585859f;
+            font-family: $white-style;}
+            color: #292121;
+        }
+    }
 
-li a:hover{
-    color: rgb(240, 240, 240);
-}
-
-p{
-    font-size: 2rem;
-
-}
-
-article p{
-    font-size: 1.5rem;
-    margin: 1rem;
-}
-
-h1 {
-    font-size: 4rem;
-    color: rgb(0, 0, 0);
-}
-
-
-section li{
-    margin: 2rem;
-    text-decoration: dotted;
-    font-size: 20px;
-}
-
-footer li{
-    display: inline;
-    list-style-type: none;
-}
+    @media (max-width: 768px){
+        .contact_info{
+            flex-direction: column;
+        }
+    }
 

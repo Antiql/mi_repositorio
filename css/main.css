@@ -41,7 +41,9 @@ nav {
     color: #1f0909;
     font-size: 2rem;
     text-decoration: none;
-    font-family: 'Righteous'; }
+    font-family: 'Righteous';
+    text-transform: uppercase;
+    list-style-type: none; }
   .header_nav_li::after {
     content: '';
     width: 0%;
@@ -52,6 +54,8 @@ nav {
     transition: 0.5s; }
   .header_nav_li:hover::after {
     width: 100%; }
+  .header_nav_li li a:hover {
+    color: #f0f0f0; }
 
 nav .fa {
   display: none; }
@@ -98,10 +102,17 @@ footer {
 .footer_item {
   padding-bottom: 5%; }
 
+footer li {
+  display: inline;
+  list-style-type: none; }
+
 body {
   font-size: 1.5rem;
   background: #e2e2e2;
   min-height: 100vh; }
+
+li a:hover {
+  color: #f0f0f0; }
 
 /* contenido principal */
 .main_content {
@@ -126,7 +137,7 @@ body {
     color: #b69fd163;
     font-family: "Righteous", cursive; }
   .main_description h2 {
-    font-size: 25px;
+    font-size: 30px;
     color: azure;
     font-family: "M PLUS 1p", sans-serif; }
   .main_description p {
@@ -142,6 +153,9 @@ body {
 
 /* our story */
 .story .story_quote {
+  margin: 2rem;
+  border: 1px solid;
+  border-radius: 20px;
   padding: 40px;
   background-image: url(img/creepy62b39e8d338a09950ad62ea83fbd4a.jpg);
   background-position: center; }
@@ -173,7 +187,7 @@ body {
       color: #6b5881a4;
       font-size: 75px; }
     .story .story_section .story_paragraph p {
-      font-size: 25px;
+      font-size: 30px;
       font-family: "M PLUS 1p", sans-serif;
       margin-bottom: 19%; }
 
@@ -181,7 +195,10 @@ body {
   margin: 2rem;
   background-color: #b69fd163;
   text-align: center;
-  padding: 2rem; }
+  padding: 2rem;
+  transition: 0.5s; }
+  .purpose_section:hover {
+    box-shadow: 0 0 20px 0 rgba(60, 13, 99, 0.575); }
   .purpose_section h2 {
     margin: 1rem 0 2rem;
     font-size: "Righteous", cursive;
@@ -190,7 +207,7 @@ body {
     font-family: "Righteous", cursive; }
   .purpose_section p {
     font-family: "M PLUS 1p", sans-serif;
-    font-size: 25px; }
+    font-size: 30px; }
 
 @media (max-width: 768px) {
   .story_quote q {
@@ -203,50 +220,151 @@ body {
       margin: 0 2rem; } }
 
 /* our services */
-.hero-btn {
-  display: inline-block;
-  text-decoration: none;
-  color: #cfcfcf;
-  border: 1px solid #fff;
-  padding: 12px 34px;
-  font-size: 25px;
-  background: transparent; }
-  .hero-btn:hover {
-    border: 1px solid #6b5881a4;
-    background: #6b5881a4;
-    transition: 1s; }
+.Artists_header {
+  text-align: center; }
+  .Artists_header h1 {
+    margin: 5% 0 0;
+    font-family: "Righteous", cursive;
+    font-size: 75px;
+    color: #6b5881a4; }
+  .Artists_header p {
+    font-size: 20px;
+    font-family: "M PLUS 1p", sans-serif; }
+
+.artists {
+  margin-top: 2rem;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between; }
+  .artists .artist_card {
+    background-color: #292121;
+    border-radius: 45px;
+    flex-basis: 31%;
+    padding: 50px;
+    transition: 0.5s;
+    margin: auto; }
+    .artists .artist_card:hover {
+      box-shadow: 0 0 20px 0 rgba(8, 2, 14, 0.575); }
+    .artists .artist_card .artist_info {
+      text-align: center; }
+      .artists .artist_card .artist_info h2 {
+        font-family: "Righteous", cursive;
+        font-size: 30px;
+        color: #b69fd163;
+        padding: 25px; }
+      .artists .artist_card .artist_info p {
+        font-family: "M PLUS 1p", sans-serif;
+        font-size: 20px;
+        color: azure; }
+
+.services_list {
+  margin: 2rem;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 2rem; }
+  .services_list h2 {
+    font-family: "Righteous", cursive;
+    color: #292121;
+    font-size: 50px; }
+  .services_list li {
+    font-size: 20px;
+    list-style: none;
+    font-family: "M PLUS 1p", sans-serif;
+    padding: 20px; }
+
+.proposal {
+  margin: 4rem;
+  border-radius: 45px;
+  background-image: url(img/forestback0.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  color: black;
+  padding: 20px;
+  text-align: center; }
+  .proposal .hero-btn {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.801);
+    border: 1px solid #ffffff;
+    padding: 12px 34px;
+    font-size: 30px;
+    background: transparent; }
+    .proposal .hero-btn:hover {
+      border: 1px solid #b10000;
+      background: #b10000;
+      transition: 1s; }
+
+@media (max-width: 768px) {
+  .Artists_header h1 {
+    font-size: 50px;
+    margin: 10px; }
+  .artists {
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .artists .artist_card {
+      margin: 5px; } }
 
 /* gallery */
-.main_section1 {
-  float: left; }
+.Gallery-intro {
+  text-align: center; }
+  .Gallery-intro h2 {
+    font-family: "Righteous", cursive;
+    font-size: 75px;
+    margin: 2rem;
+    color: #6b5881a4; }
+  .Gallery-intro p {
+    font-style: 20px;
+    font-size: 20px; }
 
-.main_section2 {
-  float: right; }
+.section_gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .section_gallery img {
+    margin: 2rem;
+    flex-basis: 45%; }
 
-li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  list-style-type: none; }
+/* contact */
+.contact_info {
+  margin: 2%;
+  display: flex; }
+  .contact_info img {
+    order: 1;
+    margin: 2rem; }
+  .contact_info .contact-col {
+    margin: 2rem;
+    order: 2;
+    color: #292121; }
+    .contact_info .contact-col h1 {
+      font-family: "Righteous", cursive;
+      font-size: 75px;
+      color: #6b5881a4; }
+    .contact_info .contact-col p {
+      font-family: "M PLUS 1p", sans-serif;
+      font-size: 20px;
+      margin-bottom: 20px; }
+    .contact_info .contact-col input {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 17px;
+      outline: none;
+      border: 1px solid #6b5881a4;
+      background-color: #8585859f;
+      font-family: "M PLUS 1p", sans-serif;
+      color: #292121; }
+    .contact_info .contact-col textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 17px;
+      outline: none;
+      border: 1px solid #6b5881a4;
+      background-color: #8585859f;
+      font-family: "M PLUS 1p", sans-serif; }
 
-li a:hover {
-  color: #f0f0f0; }
-
-p {
-  font-size: 2rem; }
-
-article p {
-  font-size: 1.5rem;
-  margin: 1rem; }
-
-h1 {
-  font-size: 4rem;
-  color: black; }
-
-section li {
-  margin: 2rem;
-  text-decoration: dotted;
-  font-size: 20px; }
-
-footer li {
-  display: inline;
-  list-style-type: none; }
+@media (max-width: 768px) {
+  .contact_info {
+    flex-direction: column; } }
